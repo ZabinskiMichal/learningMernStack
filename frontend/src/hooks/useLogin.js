@@ -16,6 +16,8 @@ export const useLogin = () => { //to jest hook
             body: JSON.stringify({email, password})
         })
 
+        console.log(response)
+
         const json = await response.json()
 
         if(!response.ok){
