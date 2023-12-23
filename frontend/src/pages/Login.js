@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useLogin } from '../hooks/useLogin'
 
-export default async function Login() {
+export default function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const { login, error, isLoading } = useLogin()
